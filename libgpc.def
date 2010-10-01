@@ -1,0 +1,10 @@
+EXPORTS
+gpc_add_contour
+gpc_free_polygon
+gpc_free_tristrip
+gpc_polygon_clip
+gpc_polygon_to_tristrip
+gpc_read_polygon
+gpc_tristrip_clip
+gpc_write_polygon
+next_h_state DATA

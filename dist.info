@@ -1,0 +1,10 @@
+--- This dist file is part of LuaDist project
+
+name = "gpc"
+version = "2.32"
+
+desc = "A new algorithm for calculating the difference, intersection, exclusive-or or union of arbitrary polygon sets."
+author = "Alan Murta"
+license = "GPC Licence/(C) Advanced Interfaces Group, University of Manchester."
+url = "http://www.cs.manchester.ac.uk/~toby/alan/software/"
+maintainer = "Peter Kapec"
