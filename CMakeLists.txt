@@ -1,21 +1,17 @@
-# Copyright (C) 2007-2009 LuaDist.
-# Created by Peter Kapec
+# Copyright (C) 2007-2012 LuaDist.
+# Created by Peter Kapec, Peter Drahoš
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(gpc C)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( gpc C )
+cmake_minimum_required ( VERSION 2.6 )
+include ( cmake/dist.cmake )
 
 # GPC Library
-ADD_LIBRARY(gpc SHARED gpc.c libgpc.def)
-INSTALL(TARGETS gpc RUNTIME DESTINATION ${INSTALL_BIN} LIBRARY DESTINATION ${INSTALL_LIB} ARCHIVE DESTINATION ${INSTALL_LIB})
+add_library ( gpc gpc.c libgpc.def )
 
-IF(MSVC)
-	SET_TARGET_PROPERTIES(gpc PROPERTIES OUTPUT_NAME libgpc CLEAN_DIRECT_OUTPUT 1 )
-ENDIF()
-#~2DO: above necessary? --djm
-
-INSTALL(FILES gpc.h DESTINATION ${INSTALL_INC})
-INSTALL(FILES GPC-README.pdf VERSIONS.TXT DESTINATION ${INSTALL_DOC})
+# Install
+install_library ( gpc )
+install_header ( gpc.h )
+install_doc ( GPC-README.pdf )
