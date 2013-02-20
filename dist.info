@@ -1,0 +1,28 @@
+type = "x86"
+arch = "Windows"
+author = "Alan Murta"
+desc = "A new algorithm for calculating the difference, intersection, exclusive-or or union of arbitrary polygon sets."
+name = "gpc"
+maintainer = "Peter Kapec"
+files = {
+Runtime = {
+[[bin\libgpc.dll]],
+}
+,
+Documentation = {
+[[share\gpc\doc\GPC-README.pdf]],
+}
+,
+Library = {
+[[lib\libgpc.dll.a]],
+}
+,
+Header = {
+[[include\gpc.h]],
+}
+,
+}
+
+license = "GPC Licence/(C) Advanced Interfaces Group, University of Manchester."
+url = "http://www.cs.manchester.ac.uk/~toby/alan/software/"
+version = "2.32"
